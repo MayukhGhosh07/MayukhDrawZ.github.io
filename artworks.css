@@ -1,0 +1,854 @@
+
+::-webkit-scrollbar{
+   width: 2px;
+ }
+ ::-webkit-scrollbar-track{
+   background-color: #000;
+ }
+ ::-webkit-scrollbar-thumb{
+   background-color: #ccc;
+   border-radius: 20px;
+ }
+
+
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.67),rgba(0,0,0,0.67)) ,url('web bg5.jpg'); 
+   background-repeat: no-repeat;
+background-attachment: fixed; 
+
+
+
+background-attachment: fixed;
+background-size: cover;
+background-position: center;
+
+min-height: 100vh;
+
+
+display: flex;
+flex-direction: column;
+
+
+ 
+ 
+   
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-li{
+   list-style: none;
+   position: relative;
+
+   
+}
+.nav-li::after{
+   content: '';
+   position: absolute;
+   background-color: #fff;
+   height: 0.1rem;
+   width: 100%;
+   left: 0;
+   bottom: 0;
+   top: 22px; 
+
+   
+
+   
+}
+.first::after{
+
+   transform: scale(0, 1);
+   transition: transform 0.3s ease;
+ 
+}
+.first:hover::after{
+   transform: scale(1, 1);
+}
+
+.second::after{
+
+   transform: scale(0, 1);
+   transition: transform 0.3s ease;
+ 
+}
+.second:hover::after{
+   transform: scale(1, 1);
+}
+
+.third::after{
+
+   transform: scale(0, 1);
+   transition: transform 0.3s ease;
+ 
+}
+.third:hover::after{
+   transform: scale(1, 1);
+}
+.forth::after{
+
+   transform: scale(0, 1);
+   transition: transform 0.3s ease;
+ 
+}
+.forth:hover::after{
+   transform: scale(1, 1);
+}
+
+
+
+
+.navbar a{
+   text-decoration: none;
+   color: #fff;
+   
+   font-family: 'Montserrat', sans-serif;
+    font-weight:00px;
+   
+   
+    
+}
+.nav-ul{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 3rem;
+   align-items: center;
+   justify-content: center;
+   padding: 2rem 2rem;
+
+ 
+  
+   
+
+  
+   
+   
+
+
+}
+.logo img{
+   border-radius: 1000000px;
+   border: none;
+   height: 40px;
+   float: left;
+   margin-left: 3rem;
+   margin-top: 1.5rem;
+   
+
+}
+
+
+
+   
+   .gallery{
+      display: grid;
+      grid-template-columns: repeat(6,2fr);
+    
+      
+  
+      
+ margin-left: 3rem;
+ margin-right: 3rem;
+
+ 
+ margin-bottom: 7rem;
+
+ 
+gap: 2rem; 
+
+margin-top: 5rem; 
+
+  
+      
+   }
+    
+ 
+   
+    
+ 
+     
+    
+       
+
+   
+   .gallery img{
+   
+   border-radius: 9px;
+   object-fit: cover;
+    height: 100%;
+   width: 100%;
+    
+
+
+   
+
+
+   
+
+
+
+
+
+       
+   
+    
+   }
+   .gallery-header{
+  
+      text-align: center;
+       color: #fff;
+               font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 3px;
+
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 3rem;
+   
+ 
+    
+   }
+   .gallery-p{
+       color: rgba(255, 255, 255, 0.7);
+       font-family: 'Poppins', sans-serif;
+       font-style: italic;
+       font-size: 13px;
+       letter-spacing: 2px;
+       margin-left: 2rem;
+       margin-bottom: -2rem;
+
+   }
+
+   /* --------------------------HAMBURGER START-------------------------- */
+
+#hamburger{
+    position: fixed;
+    z-index: 447;
+    right: 2rem;
+    top: 1.5rem;
+ 
+ }
+ 
+ 
+ 
+ .checkbtn{
+    font-size: 27px;
+    float: right;
+    line-height: 80px;
+    margin-right: 2rem;
+    cursor: pointer;
+    display: none;
+ }
+ #check{
+    display: none;
+ }
+ #cross{
+    display: none;
+    position: fixed;
+    z-index: 447;
+    right: 2rem;
+    top: 1.5rem;
+ 
+ 
+ }
+ #hamburger{
+    display: block;
+ 
+ }
+ 
+ 
+ 
+ 
+ 
+ /* --------------------------HAMBURGER END-------------------------- */
+ 
+ 
+ 
+
+
+
+    /* -----------------FOOTER-------------- */
+
+    footer{
+ 
+        margin-top: auto;
+        margin-left: 0%;
+        margin-right: 0%;
+        
+        
+        padding-bottom: 2rem;
+           
+        display: flex; 
+        flex-direction: column;
+        
+        
+        
+          
+        
+          
+          
+        
+          
+        
+          
+        
+        
+        background: #000000b9;  
+        align-items: center;
+        justify-content: center;  
+        
+          
+        
+          
+          
+        
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          
+         
+        
+        
+          
+        
+          
+        
+          
+           
+          
+        
+          
+        
+        
+        
+          
+        
+          
+        
+        
+        
+         
+         .foot-h2-1st{
+          font-size: 1.4rem;
+          color: #fff;
+          text-align: left;
+          padding-top: 2rem;
+          font-family: 'Poppins', sans-serif;
+          position: relative;
+         }
+         .footer-li{
+          list-style: none;
+          margin-bottom: 2rem;
+        
+         }
+         .footer-li a{
+          text-decoration: none;
+          list-style: none;
+          color: rgb(185, 185, 179);
+          font-family: 'Montserrat', sans-serif;
+          transition: all 0.6s ease;
+         
+        
+         }
+         .footer a{
+          text-decoration: none;
+          list-style: none;
+          color: rgb(185, 185, 179);
+          font-family: 'Montserrat', sans-serif;
+          transition: all 0.6s ease;
+         
+        
+         }
+         .footer a:hover{
+          color: #fff;
+          text-decoration: underline;
+          padding-left: 0.5rem;
+          box-sizing: border-box;
+        
+         }
+         .footer-li a:hover{
+          
+          color: #fff;
+          text-decoration: underline;
+          padding-left: 0.5rem;
+          box-sizing: border-box;
+         
+         
+        
+         }
+         .underline::after{
+          content:"";
+          position: absolute;
+          background-color: #fff;
+          width: 6rem;
+          height: 0.2rem;
+          left: 0;
+          bottom: 0;
+          top: 4.5rem;
+          border-radius: 1000px;
+         
+        
+        
+         }
+         .footer-ul{
+            margin-top: 2rem;
+         }
+         .foot-row{
+            display: grid;
+          grid-template-columns: repeat(4,1fr);
+          gap: 50px;
+          
+        
+         
+        
+          
+         
+        
+         
+          
+         }
+        
+         
+        
+         .foot-h2-2nd{
+          font-size: 1.4rem;
+          color: #fff;
+          text-align: left;
+          padding-top: 2rem;
+          font-family: 'Poppins', sans-serif;
+          position: relative;
+         }
+        
+         .foot-h2-3rd{
+          font-size: 1.4rem;
+          color: #fff;
+          text-align: left;
+          padding-top: 2rem;
+          font-family: 'Poppins', sans-serif;
+          position: relative;
+         }
+        
+         .foot-h2-4th{
+          font-size: 1.4rem;
+          color: #fff;
+          text-align: left;
+          padding-top: 2rem;
+          font-family: 'Poppins', sans-serif;
+          position: relative;
+         }
+        
+         
+         #email-p{
+          color: #fff;
+          font-family: 'Montserrat', sans-serif;
+         
+         }
+         .info-p{
+        
+          color: rgb(185, 185, 179);
+          font-style: italic;
+        
+          font-family: 'Montserrat', sans-serif;
+         
+          color: #fff;
+          margin-top: 2rem;
+        
+         }
+         .sub-footer{
+          margin-top: 2rem;
+        
+          
+         }
+         .sub-footer p{
+          text-align: center;
+          font-family: 'Montserrat', sans-serif;
+          color: rgb(185, 185, 179);
+          font-size: 14px;
+         
+         
+        
+         }
+
+
+
+    
+/* -----------------FOOTER END------------------ */
+
+
+
+
+
+/* --------------------Responsive Start------------------------------ */
+
+
+@media only screen and (min-width:280px) and (max-width:319px){
+   .foot-row{
+      grid-template-columns: repeat(1,1fr);
+   }
+
+   .gallery{
+      grid-template-columns: repeat(1,1fr);
+   }
+   .gallery{
+      grid-template-columns: repeat(1,1fr);
+   }
+   .checkbtn{
+      display: block;
+  
+    }
+    .nav-ul {
+      background-color: #000000;
+      background-image: linear-gradient(147deg, #000000 0%, #06273d 74%);
+      position: fixed;
+      left: 0; 
+      right: 0;
+      bottom: 0;
+       top: 106%;
+      height: 100vh;
+      z-index: 444;
+      padding: 0rem 0rem;
+      transition: all 0.5s ;
+      flex-direction: column;
+      gap: 5rem;
+  
+   
+      
+    
+    }
+    #check:checked ~ ul{
+      top: 0;
+     
+      
+  
+  
+    }
+    #check:checked ~ #cross{
+    display: block;
+     
+      
+  
+  
+    }
+    
+    #check:checked~ #hamburger{
+    display: none;
+     
+      
+  
+  
+    }
+  
+  
+    
+  
+    .navbar ul li a{
+      font-size: 25px;
+  
+    }
+   
+    
+     
+  
+      
+  
+    
+    .nav-li::after{
+      height: 0.2rem;
+      top: 34px;
+    }
+
+    .logo img{
+    height: 34px;
+    }
+    .gallery-header{
+      margin-top: 9rem;
+    }
+
+   
+    
+}
+
+
+
+
+@media only screen and (min-width:320px) and (max-width:480px){
+   .foot-row{
+      grid-template-columns: repeat(1,1fr);
+   }
+
+   .gallery{
+      grid-template-columns: repeat(1,1fr);
+   }
+   .gallery{
+      grid-template-columns: repeat(1,1fr);
+   }
+   .checkbtn{
+      display: block;
+  
+    }
+    .nav-ul {
+      background-color: #000000;
+      background-image: linear-gradient(147deg, #000000 0%, #06273d 74%);
+      position: fixed;
+      left: 0; 
+      right: 0;
+       top: 106%;
+      height: 100vh;
+      z-index: 444;
+      padding: 0rem 0rem;
+      transition: all 0.5s ;
+      flex-direction: column;
+      gap: 5rem;
+  
+   
+      
+    
+    }
+    #check:checked ~ ul{
+      top: 0;
+     
+      
+  
+  
+    }
+    #check:checked ~ #cross{
+    display: block;
+     
+      
+  
+  
+    }
+    
+    #check:checked~ #hamburger{
+    display: none;
+     
+      
+  
+  
+    }
+  
+  
+    
+  
+    .navbar ul li a{
+      font-size: 25px;
+  
+    }
+   
+    
+     
+  
+      
+  
+    
+    .nav-li::after{
+      height: 0.2rem;
+      top: 34px;
+    }
+
+    .logo img{
+    height: 34px;
+    }
+    .gallery-header{
+      margin-top: 9rem;
+    }
+
+   
+    
+}
+@media only screen and (min-width:481px) and (max-width:558px){
+  
+   .foot-row{
+       grid-template-columns: repeat(1,1fr);
+ 
+   }
+  
+   .checkbtn{
+     display: block;
+ 
+   }
+   .nav-ul {
+     background-color: #000000;
+     background-image: linear-gradient(147deg, #000000 0%, #06273d 74%);
+     position: fixed;
+     left: 0; 
+     right: 0;
+      top: 106%;
+     height: 100vh;
+     z-index: 444;
+     padding: 0rem 0rem;
+     transition: all 0.5s ;
+     flex-direction: column;
+     gap: 7rem;
+ 
+  
+     
+   
+   }
+   #check:checked ~ ul{
+     top: 0;
+    
+     
+ 
+ 
+   }
+   #check:checked ~ #cross{
+   display: block;
+    
+     
+ 
+ 
+   }
+   
+   #check:checked~ #hamburger{
+   display: none;
+    
+     
+ 
+ 
+   }
+ 
+ 
+   
+ 
+   .navbar ul li a{
+     font-size: 25px;
+ 
+   }
+  
+   
+    
+ 
+     
+ 
+   
+   .nav-li::after{
+     height: 0.2rem;
+     top: 34px;
+   }
+ 
+   .logo img{
+     height: 34px;
+   }
+
+   .gallery{
+      grid-template-columns: repeat(3,1fr);
+      margin-top: 10rem;
+   }
+
+
+ 
+ 
+ }
+
+
+ @media only screen and (min-width:558px) and (max-width:768px){
+   
+   
+ 
+   
+   
+   .foot-row{
+       grid-template-columns: repeat(1,1fr);
+ 
+   }
+   
+   
+   .checkbtn{
+     display: block;
+ 
+   }
+   .nav-ul {
+     background-color: #000000;
+     background-image: linear-gradient(147deg, #000000 0%, #06273d 74%);
+     position: fixed;
+     left: 0; 
+     right: 0;
+      top: 106%;
+     height: 100vh;
+     z-index: 444;
+     padding: 0rem 0rem;
+     transition: all 0.5s ;
+     flex-direction: column;
+     gap: 7rem;
+ 
+  
+     
+   
+   }
+   #check:checked ~ ul{
+     top: 0;
+    
+     
+ 
+ 
+   }
+   #check:checked ~ #cross{
+   display: block;
+    
+     
+ 
+ 
+   }
+   
+   #check:checked~ #hamburger{
+   display: none;
+    
+     
+ 
+ 
+   }
+ 
+ 
+   
+ 
+   .navbar ul li a{
+     font-size: 25px;
+ 
+   }
+  
+   
+    
+ 
+     
+ 
+   
+   .nav-li::after{
+     height: 0.2rem;
+     top: 34px;
+   }
+ 
+   .logo img{
+     height: 34px;
+   }
+   .gallery{
+      grid-template-columns: repeat(3,1fr);
+      margin-top: 10rem;
+   }
+ 
+ }
+
+ @media only screen and (min-width:769px) and (max-width:1024px){
+   .foot-row{
+       grid-template-columns: repeat(2,1fr);
+   }
+ 
+ }
+
+
+
+
+
+/* --------------------Responsive End------------------------------ */
